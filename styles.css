@@ -1,0 +1,39 @@
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+  max-width: 1920px;
+}
+
+main {
+  margin-top: 120px;
+  margin-bottom: 120px;
+  color: #E8ECFB;
+}
+
+.heading {
+  font-size: 3.33rem;
+}
+
+.heading a {
+  color: #E8ECFB;
+  transition: transform .2s; /* Animation */
+}
+
+.heading a:hover img {
+  transform: scale(5);
+}
+
+.heading a img {
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: -0.125em;
+  border-radius: 999px;
+  width: 0.8em;
+  height: 0.8em;
+  -webkit-transition: -webkit-box-shadow .5s,-webkit-transform .5s cubic-bezier(0.25, 1, 0.25, 1);
+  transition: -webkit-box-shadow .5s,-webkit-transform .5s cubic-bezier(0.25, 1, 0.25, 1);
+  -o-transition: box-shadow .5s,transform .5s cubic-bezier(0.25, 1, 0.25, 1);
+  transition: box-shadow .5s,transform .5s cubic-bezier(0.25, 1, 0.25, 1);
+  transition: box-shadow .5s,transform .5s cubic-bezier(0.25, 1, 0.25, 1),-webkit-box-shadow .5s,-webkit-transform .5s cubic-bezier(0.25, 1, 0.25, 1);
+}
