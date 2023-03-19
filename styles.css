@@ -69,3 +69,13 @@ h4 {
 .image-item img {
   border-radius: 25px;
 }
+
+/* mobile devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .image-box {
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+    gap: 15px;
+  }
+}
