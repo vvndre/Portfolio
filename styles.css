@@ -1,8 +1,19 @@
-.container {
+.box {
   margin-left: auto;
   margin-right: auto;
   width: 90%;
   max-width: 1920px;
+  margin-bottom: 17rem;
+  margin-top: 9.125rem;
+}
+
+.box-2 {
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+  max-width: 1920px;
+  margin-bottom: 3.75rem;
+  margin-top: 9.125rem;
 }
 
 main {
@@ -36,4 +47,25 @@ main {
   -o-transition: box-shadow .5s,transform .5s cubic-bezier(0.25, 1, 0.25, 1);
   transition: box-shadow .5s,transform .5s cubic-bezier(0.25, 1, 0.25, 1);
   transition: box-shadow .5s,transform .5s cubic-bezier(0.25, 1, 0.25, 1),-webkit-box-shadow .5s,-webkit-transform .5s cubic-bezier(0.25, 1, 0.25, 1);
+}
+
+h4 {
+  color: #8B949E;
+}
+
+.image-box {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  padding: 35px;
+  height: auto;
+}
+
+.image-item {
+  flex: 33.33%;
+  padding: 5px;
+}
+
+.image-item img {
+  border-radius: 25px;
 }
