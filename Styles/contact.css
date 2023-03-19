@@ -1,0 +1,124 @@
+/* * {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+} */
+
+ul {
+  list-style-type: none;
+}
+
+textarea  {  
+  font-family: IBM Plex Sans;
+  font-weight: Regular 400; 
+  font-size: 12px;
+  text-align: center; 
+}
+
+main {
+  height: 100%;
+  display: grid;
+  place-items: center;
+  margin: 0;
+  padding: 0 90px;
+  font-family: IBM Plex Sans;
+  font-weight: Regular 400;
+  color: #EFF3F4;
+}
+
+.main-container {
+  overflow: hidden;
+  position: relative;
+  z-index: 3;
+  width: 100%;
+  margin: 0 20px;
+  padding: 160px 30px 38px 38px;
+  border-radius: 1.25rem;
+  color: black;
+  background: #EFF3F4;
+  text-align: center;
+  /* box-shadow: 0 75px 75px rgb(0 0 0 / 10%); */
+}
+
+.main-container::before {
+  content: "";
+  position: absolute;
+  background: #143d81;
+  top: -880px;
+  left: 50%;
+  width: 1000px;
+  height: 1000px;
+  border-radius: 50%;
+  translate: -50% 0;
+}
+
+.main-container .logo {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: #EFF3F4;
+  height: 64px;
+  width: 64px;
+  top: 30px;
+  left: 50%;
+  translate: -50% 0;
+}
+
+.main-container .logo i{
+  font-size: 50px;
+  color: #143d81;
+  font-weight: 500;
+}
+
+.main-container>h2{
+  font-size: 22px;
+  font-weight: 700;
+  margin: 0 0 30px;
+}
+
+#form {
+  margin: 0 0 30px;
+  display: grid;
+  gap: 18px;
+}
+
+button {
+  width: 35%;
+  height: 40px;
+  border-radius: 20px;
+  font-family: IBM Plex Sans;
+  font-weight: 700;
+
+}
+
+.form-group>input {
+  text-align: center;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  body{
+    padding: 0;
+  }
+
+  .main-container{
+    margin: 0;
+    width: 360px;
+  }
+}
+
+/* Mobile devices */
+@media only screen and (min-width: 760px) {
+  main{
+    padding: 0;
+  }
+
+  .main-container{
+    margin: 0;
+    width: 660px;
+  }
+}
