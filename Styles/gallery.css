@@ -1,0 +1,52 @@
+/* main {
+  display: block;
+  width: 100%;
+}
+
+.content {
+    box-sizing: border-box;
+    display: block;
+    margin-top: 1.125rem;
+    margin-left: -1rem;
+    margin-right: -1rem;
+    
+} */
+
+#photos {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  align-items: center;
+}
+
+#photos img {
+  height: 250px;
+  width: 200px;
+  margin: 5px;
+  opacity: .9;
+  transition: all .3s ease;
+  border-radius: 12px;
+}
+
+#photos img:hover {
+  opacity: .5;
+}
+
+.fillerbox {
+  display: none;
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .images {
+    margin-left: 0;
+    width: 70%;
+  }
+
+  .fillerbox {
+    display: inline-flex;
+    height: 250px;
+    border-radius: 8px;
+  }
+}
